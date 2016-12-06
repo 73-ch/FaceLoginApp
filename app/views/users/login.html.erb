@@ -1,0 +1,11 @@
+<%= form_for(@user, url: login_path) do |f| %>
+    メールアドレス
+    <br>
+    <%= f.text_field :email %>
+    <br>
+    パスワード
+    <br>
+    <%= f.password_field :password %>
+    <br>
+    <input type="submit" value="ログイン">
+<% end %>
