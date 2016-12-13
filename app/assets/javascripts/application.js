@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require clmtrackr.min
+//= require model_pca_20_svm
 //= require_tree .

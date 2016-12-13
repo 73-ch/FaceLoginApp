@@ -7,4 +7,8 @@ class FaceAuthenticationChannel < ApplicationCable::Channel
   def unsubscribed
     # Any cleanup needed when channel is unsubscribed
   end
+
+  def test
+    logger.info "test"
+  end
 end
