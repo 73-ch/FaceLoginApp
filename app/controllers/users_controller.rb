@@ -46,7 +46,7 @@ class UsersController < ApplicationController
     eye = get_length(params[:right_eye], params[:nose])
     mouth = get_length(params[:left_eye], params[:nose])
     distance = (user.position.to_f - mouth / eye.to_f).abs
-    if distance <= 0.01
+    if distance <= 0.02
       session[:user_id] = user.id
       head 200
       return
